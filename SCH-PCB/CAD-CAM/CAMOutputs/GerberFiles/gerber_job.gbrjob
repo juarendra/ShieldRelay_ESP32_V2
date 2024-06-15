@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2024-05-31T07:23:15Z",
+        "CreationDate": "2024-06-15T15:26:41Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -13,7 +13,7 @@
         "BoardThickness": 1.57,
         "LayerNumber": 2,
         "Name": {
-            "ProjectId": "shieldRelay"
+            "ProjectId": "shieldRelayV2"
         },
         "Owner": "juarendra ramadhani <jrjuarendra@gmail.com>",
         "Size": {
