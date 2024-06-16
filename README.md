@@ -10,7 +10,7 @@ Multiple Relay with ESP32 shield. In board there are 5 Relay and 3 type of Relay
 - ESP32 WROON on BOARD
 - Pin Header GPIO with Servo Formated
 - 1 x 30A Relay Coil
-- 2 x 10A Relay Couil
+- 2 x 10A Relay Coil
 - 2 x 2A SSR
 
 # Privew Hardware BASE RPI
