@@ -15,13 +15,11 @@ Relay Shield for ESP32 , Nodemcu V2 Amica or Nodemcu V3 Lolin. In board there ar
 
 # Privew Hardware BASE RPI
 <p align="center">
-  <img src="DOC/shieldRelay1.png" width="50%" height="50%">
-  <img src="DOC/shieldRelay2.png" width="50%" height="50%">
-  <img src="DOC/shieldRelay3.png" width="50%" height="50%">
-  <img src="DOC/shieldRelay4.png" width="50%" height="50%">
-  <img src="DOC/shieldRelay5.png" width="50%" height="50%">
-  <img src="DOC/shieldRelay6.png" width="50%" height="50%">
-  <img src="DOC/shieldRelay7.png" width="50%" height="50%">
+  <img src="DOC/shieldRelayV2_1.png" width="50%" height="50%">
+  <img src="DOC/shieldRelayV2_2.png" width="50%" height="50%">
+  <img src="DOC/shieldRelayV2_3.png" width="50%" height="50%">
+  <img src="DOC/shieldRelayV2_4.png" width="50%" height="50%">
+  <img src="DOC/shieldRelayV2_5.png" width="50%" height="50%">
 </p>
 
 # Documentation 
