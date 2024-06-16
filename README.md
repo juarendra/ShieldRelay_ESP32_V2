@@ -15,6 +15,11 @@ Multiple Relay with ESP32 shield. In board there are 5 Relay and 3 type of Relay
 
 # Privew Hardware BASE RPI
 <p align="center">
+  <img src="DOC/shieldRelayV2_6.png" width="50%" height="50%">
+</p>
+
+# Privew Hardware BASE RPI
+<p align="center">
   <img src="DOC/shieldRelayV2_1.png" width="50%" height="50%">
   <img src="DOC/shieldRelayV2_2.png" width="50%" height="50%">
   <img src="DOC/shieldRelayV2_3.png" width="50%" height="50%">
