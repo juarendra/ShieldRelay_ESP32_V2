@@ -4784,7 +4784,7 @@ Source: &lt;a href="http://www.te.com/commerce/DocumentDelivery/DDEController?Ac
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6678,9 +6678,9 @@ POWER SUPPLY</text>
 <attribute name="NAME" x="118.364" y="132.08" size="1.016" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="118.364" y="127.762" size="1.016" layer="96" rot="R270" align="center-left"/>
 </instance>
-<instance part="LED" gate="G$1" x="118.364" y="101.346" smashed="yes" rot="R90">
-<attribute name="NAME" x="120.65" y="102.108" size="1.016" layer="95" rot="R90"/>
-<attribute name="VALUE" x="120.65" y="113.284" size="1.016" layer="96" rot="R90"/>
+<instance part="LED" gate="G$1" x="118.364" y="118.11" smashed="yes" rot="R270">
+<attribute name="NAME" x="119.126" y="116.586" size="1.016" layer="95" rot="R270"/>
+<attribute name="VALUE" x="119.126" y="106.172" size="1.016" layer="96" rot="R270"/>
 </instance>
 <instance part="Q6" gate="G$1" x="49.276" y="40.386" smashed="yes">
 <attribute name="NAME" x="62.992" y="37.338" size="1.016" layer="95" rot="R90" align="center-left"/>
@@ -6792,8 +6792,8 @@ POWER SUPPLY</text>
 <instance part="+3V9" gate="G$1" x="75.946" y="159.512" smashed="yes" rot="R270">
 <attribute name="VALUE" x="76.962" y="161.544" size="1.016" layer="96" rot="R270"/>
 </instance>
-<instance part="GND14" gate="1" x="118.364" y="97.028" smashed="yes">
-<attribute name="VALUE" x="116.84" y="94.996" size="1.016" layer="96"/>
+<instance part="+3V7" gate="G$1" x="118.364" y="97.028" smashed="yes" rot="R180">
+<attribute name="VALUE" x="120.142" y="96.266" size="1.016" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -6858,11 +6858,6 @@ POWER SUPPLY</text>
 <pinref part="S1" gate="G$1" pin="4"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="101.092" y1="131.064" x2="101.092" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="LED" gate="G$1" pin="K"/>
-<wire x1="118.364" y1="101.346" x2="118.364" y2="99.568" width="0.1524" layer="91"/>
-<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -7178,13 +7173,6 @@ POWER SUPPLY</text>
 <wire x1="71.628" y1="136.656" x2="70.788" y2="136.656" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="LED" gate="G$1" pin="A"/>
-<pinref part="R13" gate="G$1" pin="2"/>
-<wire x1="118.364" y1="116.586" x2="118.364" y2="119.888" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="4" class="0">
 <segment>
 <pinref part="ESP32" gate="G$1" pin="IO2"/>
@@ -7336,6 +7324,11 @@ POWER SUPPLY</text>
 <wire x1="70.788" y1="159.516" x2="70.788" y2="159.512" width="0.1524" layer="91"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="LED" gate="G$1" pin="A"/>
+<pinref part="+3V7" gate="G$1" pin="+3V3"/>
+<wire x1="118.364" y1="102.87" x2="118.364" y2="99.568" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="20" class="0">
 <segment>
@@ -7351,6 +7344,13 @@ POWER SUPPLY</text>
 <wire x1="70.788" y1="131.576" x2="70.788" y2="131.572" width="0.1524" layer="91"/>
 <wire x1="70.788" y1="131.572" x2="73.406" y2="131.572" width="0.1524" layer="91"/>
 <label x="73.406" y="131.572" size="1.016" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="LED" gate="G$1" pin="K"/>
+<pinref part="R13" gate="G$1" pin="2"/>
+<wire x1="118.364" y1="118.11" x2="118.364" y2="119.888" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
