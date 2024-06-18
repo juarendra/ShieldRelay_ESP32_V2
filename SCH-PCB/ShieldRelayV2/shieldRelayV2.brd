@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="10" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -187,7 +187,7 @@
 <layer number="255" name="Accent" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6Z21haWwyMzM3NTk" projecturn="a.YnVzaW5lc3M6Z21haWwyMzM3NTkjRDIwMTkwNzEwMjAyOTg4NzI2" f3durn="urn:adsk.wipprod:dm.lineage:9T0BP-n2RnCNxMkO3_9ujQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="43e5cbbb-d091-4418-b876-1ea316f0a193" lastsyncedrevisionid="43e5cbbb-d091-4418-b876-1ea316f0a193" lastboardhashguid="19c69a16-bb44-e2b6-368f-cff3622da438" lastpushedtime="2024-06-15T15:23:29Z" linktopcb3d="false"/>
+<fusionsync huburn="a.YnVzaW5lc3M6Z21haWwyMzM3NTk" projecturn="a.YnVzaW5lc3M6Z21haWwyMzM3NTkjRDIwMTkwNzEwMjAyOTg4NzI2" f3durn="urn:adsk.wipprod:dm.lineage:9T0BP-n2RnCNxMkO3_9ujQ" pcbguid="" lastpulledtime="" lastsyncedchangeguid="" latestrevisionid="43e5cbbb-d091-4418-b876-1ea316f0a193" lastsyncedrevisionid="43e5cbbb-d091-4418-b876-1ea316f0a193" lastboardhashguid="19c69a16-bb44-e2b6-368f-cff3622da438" lastpushedtime="2024-06-15T15:23:29Z" linktopcb3d="true"/>
 <plain>
 <wire x1="78.74" y1="23.368" x2="78.486" y2="23.622" width="0.1524" layer="21"/>
 <text x="45.212" y="27.432" size="0.6096" layer="21" rot="R180">5V</text>
@@ -3848,6 +3848,11 @@ design rules under a new name.</description>
 <via x="38.1" y="59.436" extent="1-16" drill="0.35"/>
 <via x="34.544" y="59.436" extent="1-16" drill="0.35"/>
 <contactref element="IC2" pad="1"/>
+<contactref element="LED" pad="1"/>
+<contactref element="USB" pad="S1"/>
+<contactref element="USB" pad="S4"/>
+<contactref element="USB" pad="S2"/>
+<contactref element="USB" pad="S3"/>
 </signal>
 <signal name="N$2">
 <contactref element="R1" pad="1"/>
@@ -4255,7 +4260,6 @@ design rules under a new name.</description>
 <contactref element="C15" pad="2"/>
 <contactref element="C4" pad="2"/>
 <wire x1="81.026" y1="29.302" x2="82.296" y2="29.302" width="0.254" layer="1"/>
-<contactref element="LED" pad="1"/>
 <contactref element="R51" pad="1"/>
 <contactref element="ESP32" pad="2"/>
 <wire x1="71.628" y1="29.21" x2="71.628" y2="29.718" width="0.254" layer="1"/>
@@ -4274,13 +4278,6 @@ design rules under a new name.</description>
 <wire x1="71.628" y1="29.718" x2="72.898" y2="30.988" width="0.254" layer="1"/>
 <wire x1="78.994" y1="34.29" x2="78.994" y2="30.734" width="0.254" layer="1"/>
 <wire x1="78.994" y1="30.734" x2="80.391" y2="29.337" width="0.254" layer="1"/>
-<wire x1="68.072" y1="17.592" x2="68.072" y2="18.288" width="0.254" layer="1"/>
-<wire x1="68.072" y1="18.288" x2="68.326" y2="18.542" width="0.254" layer="1"/>
-<wire x1="68.834" y1="18.542" x2="69.342" y2="19.05" width="0.254" layer="1"/>
-<wire x1="69.342" y1="21.59" x2="69.088" y2="21.844" width="0.254" layer="1"/>
-<wire x1="69.088" y1="21.844" x2="69.088" y2="22.606" width="0.254" layer="1"/>
-<wire x1="68.326" y1="18.542" x2="68.834" y2="18.542" width="0.254" layer="1"/>
-<wire x1="69.342" y1="19.05" x2="69.342" y2="21.59" width="0.254" layer="1"/>
 <wire x1="70.7644" y1="26.8224" x2="70.7644" y2="26.67" width="0.254" layer="1"/>
 <wire x1="69.088" y1="22.606" x2="69.0124" y2="22.606" width="0.254" layer="1"/>
 <via x="69.0124" y="22.606" extent="1-16" drill="0.35"/>

@@ -4782,9 +4782,9 @@ Source: &lt;a href="http://www.te.com/commerce/DocumentDelivery/DDEController?Ac
 <part name="GND25" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="+3V5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
-<part name="+3V7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="+3V9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6786,14 +6786,14 @@ POWER SUPPLY</text>
 <instance part="+3V6" gate="G$1" x="93.726" y="121.92" smashed="yes">
 <attribute name="VALUE" x="91.948" y="122.682" size="1.016" layer="96"/>
 </instance>
-<instance part="+3V7" gate="G$1" x="118.364" y="97.028" smashed="yes" rot="R180">
-<attribute name="VALUE" x="119.634" y="96.266" size="1.016" layer="96" rot="R180"/>
-</instance>
 <instance part="+3V8" gate="G$1" x="11.938" y="158.242" smashed="yes">
 <attribute name="VALUE" x="9.906" y="159.258" size="1.016" layer="96"/>
 </instance>
 <instance part="+3V9" gate="G$1" x="75.946" y="159.512" smashed="yes" rot="R270">
 <attribute name="VALUE" x="76.962" y="161.544" size="1.016" layer="96" rot="R270"/>
+</instance>
+<instance part="GND14" gate="1" x="118.364" y="97.028" smashed="yes">
+<attribute name="VALUE" x="116.84" y="94.996" size="1.016" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6831,6 +6831,10 @@ POWER SUPPLY</text>
 <pinref part="USB" gate="G$1" pin="GND"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="171.958" y1="143.51" x2="177.546" y2="143.51" width="0.1524" layer="91"/>
+<pinref part="USB" gate="G$1" pin="SHIELD"/>
+<wire x1="171.958" y1="146.05" x2="177.546" y2="146.05" width="0.1524" layer="91"/>
+<wire x1="177.546" y1="146.05" x2="177.546" y2="143.51" width="0.1524" layer="91"/>
+<junction x="177.546" y="143.51"/>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
@@ -6854,6 +6858,11 @@ POWER SUPPLY</text>
 <pinref part="S1" gate="G$1" pin="4"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="101.092" y1="131.064" x2="101.092" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED" gate="G$1" pin="K"/>
+<wire x1="118.364" y1="101.346" x2="118.364" y2="99.568" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VBUS" class="0">
@@ -7315,11 +7324,6 @@ POWER SUPPLY</text>
 <wire x1="96.266" y1="119.38" x2="96.266" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 <junction x="93.726" y="119.38"/>
-</segment>
-<segment>
-<pinref part="LED" gate="G$1" pin="K"/>
-<wire x1="118.364" y1="101.346" x2="118.364" y2="99.568" width="0.1524" layer="91"/>
-<pinref part="+3V7" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="R51" gate="G$1" pin="1"/>
