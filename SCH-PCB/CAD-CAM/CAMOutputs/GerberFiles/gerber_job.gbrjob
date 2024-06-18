@@ -1,7 +1,7 @@
 {
     "Header": {
         "Comment": "All values are metric (mm)",
-        "CreationDate": "2024-06-15T15:26:41Z",
+        "CreationDate": "2024-06-18T03:40:59Z",
         "GenerationSoftware": {
             "Application": "EAGLE",
             "Vendor": "Autodesk",
@@ -15,7 +15,7 @@
         "Name": {
             "ProjectId": "shieldRelayV2"
         },
-        "Owner": "juarendra ramadhani <jrjuarendra@gmail.com>",
+        "Owner": "  <>",
         "Size": {
             "X": 99.06,
             "Y": 84.074

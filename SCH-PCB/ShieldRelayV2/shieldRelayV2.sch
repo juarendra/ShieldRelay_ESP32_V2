@@ -5238,11 +5238,15 @@ POWER SUPPLY</text>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="196.85" y1="121.666" x2="196.85" y2="119.634" width="0.1524" layer="91"/>
-<wire x1="196.85" y1="119.634" x2="222.758" y2="119.634" width="0.1524" layer="91"/>
+<wire x1="196.85" y1="119.634" x2="202.946" y2="119.634" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="202.946" y1="119.634" x2="222.758" y2="119.634" width="0.1524" layer="91"/>
 <wire x1="222.758" y1="119.634" x2="247.65" y2="119.634" width="0.1524" layer="91"/>
 <wire x1="247.65" y1="119.634" x2="247.65" y2="121.666" width="0.1524" layer="91"/>
 <junction x="222.758" y="119.634"/>
+<pinref part="IC2" gate="G$1" pin="GROUND"/>
+<wire x1="202.946" y1="131.826" x2="202.946" y2="119.634" width="0.1524" layer="91"/>
+<junction x="202.946" y="119.634"/>
 </segment>
 </net>
 <net name="IN2" class="0">
